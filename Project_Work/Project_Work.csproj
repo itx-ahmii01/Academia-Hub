@@ -200,6 +200,7 @@
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="obj\Debug\Project_Work.csproj.CoreCompileInputs.cache" />
     <Content Include="obj\Debug\Project_Work.csprojAssemblyReference.cache" />
+    <Content Include="WebForms\faqs.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="obj\Debug\academia_hub.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\academia_hub.dll" />
@@ -232,6 +233,8 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="WebForms\homepage.aspx" />
+    <Content Include="WebForms\profile.aspx" />
     <Content Include="WebForms\Signup.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
@@ -267,6 +270,20 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebForms\homepage.aspx.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\homepage.aspx.designer.cs">
+      <DependentUpon>homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForms\Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -294,6 +311,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\faqs.aspx.cs">
+      <DependentUpon>faqs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\faqs.aspx.designer.cs">
+      <DependentUpon>faqs.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
