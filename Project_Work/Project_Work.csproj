@@ -195,6 +195,8 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="WebForms\feedback.aspx" />
+    <Content Include="WebForms\top_10prof.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -224,9 +226,11 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="WebForms\ContactUs.aspx" />
     <Content Include="WebForms\faqs.aspx" />
     <Content Include="WebForms\homepage.aspx" />
     <Content Include="WebForms\Login.aspx" />
+    <Content Include="WebForms\portal.aspx" />
     <Content Include="WebForms\profile.aspx" />
     <Content Include="WebForms\Signup.aspx" />
     <Content Include="Site.Master" />
@@ -264,12 +268,26 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DAL.cs" />
+    <Compile Include="WebForms\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForms\faqs.aspx.cs">
       <DependentUpon>faqs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForms\faqs.aspx.designer.cs">
       <DependentUpon>faqs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\homepage.aspx.cs">
       <DependentUpon>homepage.aspx</DependentUpon>
@@ -284,6 +302,13 @@
     </Compile>
     <Compile Include="WebForms\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\portal.aspx.cs">
+      <DependentUpon>portal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\portal.aspx.designer.cs">
+      <DependentUpon>portal.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\profile.aspx.cs">
       <DependentUpon>profile.aspx</DependentUpon>
@@ -319,6 +344,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\top_10prof.aspx.cs">
+      <DependentUpon>top_10prof.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\top_10prof.aspx.designer.cs">
+      <DependentUpon>top_10prof.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
