@@ -195,7 +195,12 @@
     <Content Include="bin\roslyn\vbc.exe.config" />
     <Content Include="bin\roslyn\vbc.rsp" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="GPA cal\bootstrap.css" />
+    <Content Include="GPA cal\index.aspx" />
+    <Content Include="GPA cal\main.js" />
+    <Content Include="GPA cal\styles.css" />
     <Content Include="WebForms\feedback.aspx" />
+    <Content Include="WebForms\QuoraHub.aspx" />
     <Content Include="WebForms\top_10prof.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -266,6 +271,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GPA cal\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GPA cal\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DAL.cs" />
     <Compile Include="WebForms\ContactUs.aspx.cs">
@@ -316,6 +328,13 @@
     </Compile>
     <Compile Include="WebForms\profile.aspx.designer.cs">
       <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\QuoraHub.aspx.cs">
+      <DependentUpon>QuoraHub.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\QuoraHub.aspx.designer.cs">
+      <DependentUpon>QuoraHub.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\Signup.aspx.cs">
       <DependentUpon>Signup.aspx</DependentUpon>

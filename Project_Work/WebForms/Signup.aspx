@@ -25,9 +25,9 @@
       <span class="ml-3 text-xl">Academia Community</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white">FeedBack</a>
-      <a class="mr-5 hover:text-white">FAQ's</a>
-      <a class="mr-5 hover:text-white">Contact Us</a>
+      <a href="feedback.aspx" class="mr-5 hover:text-white">FeedBack</a>
+      <a href="faqs.aspx" class="mr-5 hover:text-white">FAQ's</a>
+      <a href="ContactUs.aspx" class="mr-5 hover:text-white">Contact Us</a>
     
     </nav>
      <path d="M5 12h14M12 5l7 7-7 7"></path>

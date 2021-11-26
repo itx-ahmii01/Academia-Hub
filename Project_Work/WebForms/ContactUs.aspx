@@ -4,7 +4,7 @@
 <html>
   <head>
      <title>Responsive Website Using Tailwind Css </title>
-      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+      <link href="\Content\tailwind.css" rel="stylesheet">
  
 </head>
   <body>
@@ -25,9 +25,9 @@
       <span class="ml-3 text-xl">Academia Community</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white">FeedBack</a>
-      <a class="mr-5 hover:text-white">FAQ's</a>
-      <a class="mr-5 hover:text-white">Contact Us</a>
+      <a href="feedback.aspx" class="mr-5 hover:text-white">FeedBack</a>
+      <a href="faqs.aspx" class="mr-5 hover:text-white">FAQ's</a>
+      <a href="ContactUs.aspx" class="mr-5 hover:text-white">Contact Us</a>
     
     </nav>
     <button class="inline-flex items-center bg-blue-800 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Profile

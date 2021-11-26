@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link href="\Content\tailwind.css" rel="stylesheet">
     </head>
     <body>
         <header class="text-gray-400 bg-gray-900 body-font">
@@ -21,9 +21,9 @@
       <span class="ml-3 text-xl">Academia Community</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-white">Feedback</a>
-      <a class="mr-5 hover:text-white">FAQ's</a>
-      <a class="mr-5 hover:text-white">Contact Us</a>
+      <a href="feedback.aspx" class="mr-5 hover:text-white">FeedBack</a>
+      <a href="faqs.aspx" class="mr-5 hover:text-white">FAQ's</a>
+      <a href="ContactUs.aspx" class="mr-5 hover:text-white">Contact Us</a>
     </nav>
     <button class="inline-flex items-center bg-blue-800 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Profile
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
