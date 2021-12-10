@@ -8,7 +8,7 @@
  
 </head>
   <body>
-    
+    <form runat="server">
 <header class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
@@ -46,17 +46,19 @@
       <p class="leading-relaxed mb-5">Enter your feedback for this site</p>
       <div class="relative mb-4">
         <label for="email" class="leading-7 text-sm text-gray-400">Email</label>
-        <input type="email" id="email" name="email" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+         <asp:Textbox runat="server" type="email" id="email" name="email" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></asp:Textbox>
+        
       </div>
       <div class="relative mb-4">
         <label for="message" class="leading-7 text-sm text-gray-400">Feedback/Suggestion</label>
-        <textarea id="message" name="message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        <asp:Textbox runat="server" id="message" name="message" class="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></asp:Textbox>
       </div>
-      <button class="text-white bg-blue-500 text-white border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
-      <p class="text-xs text-gray-400 text-opacity-90 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
-    </div>
+      <asp:button runat="server" class="text-white bg-blue-500 text-white border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" Text="Submit" OnClick="Unnamed_Click"/>
+      </div>
   </div>
 </section>
+        </form>
+      
       <footer class="text-gray-400 bg-gray-900 body-font">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
     <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
