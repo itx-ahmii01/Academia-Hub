@@ -11,7 +11,7 @@ namespace Project_Work.WebForms
 {
 
 
-    public partial class ContactUs
+    public partial class Subscribe
     {
 
         /// <summary>
@@ -24,21 +24,30 @@ namespace Project_Work.WebForms
         protected global::System.Web.UI.WebControls.TextBox name;
 
         /// <summary>
-        /// email control.
+        /// id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email;
+        protected global::System.Web.UI.WebControls.TextBox id;
 
         /// <summary>
-        /// message control.
+        /// card control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox message;
+        protected global::System.Web.UI.WebControls.TextBox card;
+
+        /// <summary>
+        /// password control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox password;
     }
 }

@@ -201,6 +201,7 @@
     <Content Include="GPA cal\styles.css" />
     <Content Include="WebForms\feedback.aspx" />
     <Content Include="WebForms\QuoraHub.aspx" />
+    <Content Include="WebForms\Subscribe.aspx" />
     <Content Include="WebForms\top_10prof.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -363,6 +364,13 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForms\Subscribe.aspx.cs">
+      <DependentUpon>Subscribe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForms\Subscribe.aspx.designer.cs">
+      <DependentUpon>Subscribe.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForms\top_10prof.aspx.cs">
       <DependentUpon>top_10prof.aspx</DependentUpon>
