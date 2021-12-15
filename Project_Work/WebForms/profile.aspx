@@ -7,7 +7,7 @@
     <body>
         <header class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+    <a href="homepage.aspx" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
   <svg xmlns="http://www.w3.org/2000/svg" 
              class="fill-current text-blue-500  h-16 w-16" 
              fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -25,7 +25,7 @@
       <a href="faqs.aspx" class="mr-5 hover:text-white">FAQ's</a>
       <a href="ContactUs.aspx" class="mr-5 hover:text-white">Contact Us</a>
     </nav>
-    <button class="inline-flex items-center bg-blue-800 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Profile
+    <button class="inline-flex items-center bg-blue-800 text-white border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0"><a href="profile.aspx" >Profile</a>
       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
         <path d="M5 12h14M12 5l7 7-7 7"></path>
       </svg>
