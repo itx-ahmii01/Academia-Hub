@@ -172,6 +172,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Content\tailwind.css" />
     <Content Include="Database\db.sql" />
+    <Content Include="Database\subscribe.sql" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

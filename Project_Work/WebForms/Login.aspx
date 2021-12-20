@@ -8,6 +8,7 @@
  
 </head>
   <body>
+       <form runat="server">
     <meta name="color-scheme" content="dark light">   
 <header class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -38,38 +39,41 @@
   </div>
 </header>
 <body>
-  
-<section class="text-gray-600 body-font relative">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full mb-12">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-900">Login</h1>
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base"></p>
+ <section class="text-gray-400 bg-gray-900 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Login</h1>
       </div>
-      <div class="lg:w-1/2 md:w-2/3 mx-auto">
-        <div class="flex flex-wrap -m-2">
-          <div class="p-2 w-1/2">
-            <div class="relative">
-              <label for="name" class="leading-7 text-sm text-gray-600">Email</label>
-              <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-          </div>
-          <div class="p-2 w-1/2">
-            <div class="relative">
-              <label for="email" class="leading-7 text-sm text-gray-600">Password</label>
-              <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-            </div>
-          </div>
-          
-            <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Login</button>
-          </div>
-          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-            <a class="text-indigo-500"></a>
-            
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="name" class="leading-7 text-sm text-gray-400">Email</label>
+            <asp:Textbox runat="server" type="Text" id="name" name="name" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></asp:Textbox>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+        <div class="p-2 w-1/2">
+          <div class="relative">
+            <label for="email" class="leading-7 text-sm text-gray-400">Password</label>
+            <asp:Textbox runat="server" type="Text" id="password" name="email" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-indigo-500 focus:bg-gray-900 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"></asp:Textbox>
+          </div>
+        </div>
+       
+        </div>
+        <div class="p-2 w-full">
+          <%--   <<asp:button runat="server" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"Text="Login" OnClick="Unnamed_Click"/>
+     --%>
+          <asp:button runat="server" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" Text="Login" OnClick="Unnamed_Click"/>
+         </div>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+          <a class="text-indigo-400"></a>
+          <p class="leading-normal my-5">
+            <br>
+          </p>
+          
+  </div>
+</section>
+      </form>
 </body>
 <footer class="text-gray-400 bg-gray-900 body-font">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
@@ -108,4 +112,4 @@
   </div>
 </footer>
 </html>
-</html>
+
