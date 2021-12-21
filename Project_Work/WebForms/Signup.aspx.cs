@@ -45,24 +45,55 @@ System.Configuration.ConfigurationManager.ConnectionStrings["sqlCon1"].Connectio
                 Label1.Visible = true;
                 Label1.Text = ee.Message;
             }
-               // int found = obj.signup(full.Text,);
-            
+            // int found = obj.signup(full.Text,);
+            if (isFormValid())
+            {
+                string Type = "NONE";
 
+                //  dal objMyDal = new dal();
+
+                int Found = 1;
+                //    objMyDal.SignupCheck(FnameTxt.Text, LnameTxt.Text, EmailTxt.Text, PassTxt.Text, CityTxt.Text, PhoneTxt.Text, Type);
+
+                if (Found == 0)
+                {
+                    Response.Write("<script> alert('User already Registered!'); </script>");
+                }
+                else
+                {
+                    Response.Redirect("~/Login.aspx");
+                }
+            }
+
+            ClearForm();
+
+
+        }
+        private void ClearForm()
+        {
+
+            full.Text = string.Empty;
+            email.Text = string.Empty;
+
+            pass.Text = string.Empty;
+            password2.Text = string.Empty;
+           
         }
         private bool isFormValid()
         {
-            if (FnameTxt.Text == "" || LnameTxt.Text == "" ||
-               EmailTxt.Text == "" || PassTxt.Text == "" ||
-               CPassTxt.Text == "" || PhoneTxt.Text == "")
+           
+            if (full.Text == "" ||
+              email.Text == "" || pass.Text == "" ||
+               password2.Text == "")
             {
                 Response.Write("<script> alert('Please fill out all neccessary fields!'); </script>");
                 return false;
             }
 
-            if (.Text != CPassTxt.Text)
+            if (pass.Text != password2.Text)
             {
                 // Password mismatch
-                CPassTxt.Focus();
+                password2.Focus();
                 Response.Write("<script> alert('Password Mismatch'); </script>");
                 return false;
             }
