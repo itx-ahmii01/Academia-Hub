@@ -49,6 +49,26 @@ System.Configuration.ConfigurationManager.ConnectionStrings["sqlCon1"].Connectio
             
 
         }
+        private bool isFormValid()
+        {
+            if (FnameTxt.Text == "" || LnameTxt.Text == "" ||
+               EmailTxt.Text == "" || PassTxt.Text == "" ||
+               CPassTxt.Text == "" || PhoneTxt.Text == "")
+            {
+                Response.Write("<script> alert('Please fill out all neccessary fields!'); </script>");
+                return false;
+            }
+
+            if (.Text != CPassTxt.Text)
+            {
+                // Password mismatch
+                CPassTxt.Focus();
+                Response.Write("<script> alert('Password Mismatch'); </script>");
+                return false;
+            }
+
+            return true;
+        }
 
     }
 }
